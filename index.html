@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Morgan Fragoso | AI Solutions Engineer & Cloud Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .profile-image-container {
+            position: relative;
+            display: inline-block;
+        }
+        .profile-image-container::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #2563eb20, #0ea5e920);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        .profile-image {
+            position: relative;
+            z-index: 1;
+            border: 4px solid white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .tech-card {
+            @apply flex items-center gap-3.5 px-4 py-3.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-semibold shadow-sm hover:border-blue-200 hover:bg-blue-50/50 hover:text-blue-700 hover:-translate-y-1 hover:shadow-md transition-all cursor-default;
+        }
+        .tech-card svg {
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-slate-900">
+                Victor Morgan Fragoso<span class="text-blue-600">.</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition-colors">About Me</a>
+                <a href="#case-studies" class="hover:text-blue-600 transition-colors">Case Studies</a>
+                <a href="#tech-stack" class="hover:text-blue-600 transition-colors">Tech Stack</a>
+                <a href="#expertise" class="hover:text-blue-600 transition-colors">Core Competencies</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full transition-all shadow-sm shadow-blue-200 font-semibold flex items-center gap-2">
+                    <i data-lucide="download" class="w-4 h-4"></i> Resume
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-600 hover:text-slate-900">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden pt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 flex flex-col items-start">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide mb-6">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    Available for Remote Roles
+                </div>
+                
+                <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-2">
+                    AI Solutions Engineer & <br />
+                    <span class="gradient-text">Cloud Architect</span>.
+                </h1>
+                <p class="text-lg text-slate-500 font-medium mb-6 flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i> Curitiba, Paraná, Brazil
+                </p>
+                
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl">
+                    Senior IT professional with over 15 years of experience bridging the gap between complex infrastructure and strategic goals. From managing enterprise cloud observability to currently designing scalable, AI-driven workflows and LLM integrations for global environments.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#expertise" class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 rounded-xl font-medium transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                        Explore Expertise <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/victor-morgan-fragoso" target="_blank" class="bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-8 py-3.5 rounded-xl font-medium transition-all shadow-sm flex items-center gap-2">
+                        <i data-lucide="linkedin" class="w-5 h-5 text-[#0A66C2]"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 w-full flex justify-center">
+                <div class="profile-image-container">
+                    <img src="assets/img/unnamed.jpg" onerror="this.src='https://placehold.co/400x400/2563eb/white?text=VM'" alt="Victor Morgan Fragoso" class="profile-image rounded-full w-64 h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Technical Arsenal (NEW SECTION) -->
+    <section id="tech-stack" class="bg-white py-16 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Technical Arsenal & Stack</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="tech-card"><i data-lucide="cpu" class="text-purple-500"></i> <span>AI & LLM Integration</span></div>
+                <div class="tech-card"><i data-lucide="terminal" class="text-teal-500"></i> <span>Claude Code & AI</span></div>
+                <div class="tech-card"><i data-lucide="bot" class="text-indigo-500"></i> <span>Atlassian MCP & Rovo</span></div>
+                <div class="tech-card"><i data-lucide="code" class="text-blue-500"></i> <span>TS, JS & C# (.NET)</span></div>
+                <div class="tech-card"><i data-lucide="zap" class="text-orange-500"></i> <span>Atlassian Studio & n8n</span></div>
+                <div class="tech-card"><i data-lucide="line-chart" class="text-emerald-500"></i> <span>Dynatrace & Obs</span></div>
+                <div class="tech-card"><i data-lucide="database" class="text-slate-500"></i> <span>SQL Server & Oracle</span></div>
+                <div class="tech-card"><i data-lucide="webhook" class="text-cyan-500"></i> <span>REST API & GraphQL</span></div>
+                <div class="tech-card"><i data-lucide="trending-up" class="text-rose-500"></i> <span>Escalation Management</span></div>
+                <div class="tech-card"><i data-lucide="shield-alert" class="text-red-500"></i> <span>Incident Management</span></div>
+                <div class="tech-card"><i data-lucide="search-check" class="text-blue-400"></i> <span>RCA & Customer Focus</span></div>
+                <div class="tech-card"><i data-lucide="layers" class="text-amber-500"></i> <span>Agile & SAFe 2.0</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Core Competencies -->
+    <section id="expertise" class="bg-slate-50 py-24 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 max-w-2xl text-center mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Competencies</h2>
+                <p class="text-lg text-slate-600">A unique blend of modern AI integration capabilities built upon a rock-solid foundation of enterprise system architecture and reliability.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: AI Integrations -->
+                <div class="p-8 rounded-2xl bg-white border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI Agents & LLM Integration</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Experienced in streamlining workflows using Atlassian tools, MCP, and Rovo AI. Actively expanding expertise in n8n for automation, architecture best practices, Python, and the Claude solutions stack (AI, Code, API, integrations).</p>
+                </div>
+                
+                <!-- Card 2: Troubleshooting & Reliability -->
+                <div class="p-8 rounded-2xl bg-white border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Troubleshooting & Reliability</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Deep expertise in diagnosing complex issues and ensuring system stability. This foundation is crucial for designing resilient architectures that anticipate and mitigate failure in production environments.</p>
+                </div>
+                
+                <!-- Card 3: Technical Solutions & Escalations -->
+                <div class="p-8 rounded-2xl bg-white border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <i data-lucide="git-merge" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Technical Solutions & Escalations</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Proven track record driving strategic internal projects and managing critical escalations for Jira Align. Skilled at bridging technical teams with stakeholders and building custom integrations to streamline complex workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies (Placeholder) -->
+    <section id="case-studies" class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Case Studies</h2>
+            <p class="text-lg text-slate-600 mb-12">Applying my knowledge to real-world scenarios and learning projects.</p>
+            <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl p-12 shadow-sm border-dashed">
+                <i data-lucide="code-2" class="w-12 h-12 text-slate-400 mx-auto mb-4"></i>
+                <h3 class="text-xl font-medium text-slate-600">Case studies in development</h3>
+                <p class="text-slate-500 mt-2">Showcasing my current in progress projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Timeline / About Me -->
+    <section id="about" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="h-px bg-slate-200 flex-grow"></div>
+                <h2 class="text-3xl font-bold text-slate-900">My Professional Journey</h2>
+                <div class="h-px bg-slate-200 flex-grow"></div>
+            </div>
+            
+            <div class="prose prose-lg prose-slate mx-auto text-slate-600">
+                <p class="mb-6">
+                    Before architecting next-generation AI agents, I honed my skills in the trenches. At <strong>T-Systems</strong> and <strong>Volvo</strong>, I was responsible for diagnosing complex issues, managing enterprise observability with Dynatrace, and writing scripts in languages like C# and TypeScript to keep multi-layer environments running seamlessly. This hands-on background in infrastructure, relational databases (SQL Server/Oracle), and API integrations gave me a profound understanding of how systems communicate.
+                </p>
+                <p class="mb-6">
+                    During my tenure with <strong>Jira Align</strong> at Atlassian, I shifted towards strategic process optimization and incident management, acting as the bridge between highly technical engineering teams and business stakeholders.
+                </p>
+                <p class="mb-6">
+                    Today, as a <strong>Senior AI Cloud Engineer</strong> focusing on Atlassian Rovo and MCP Servers, I leverage this entire historical stack. Because I deeply understand traditional codebases and cloud infrastructure, I can design more secure, reliable, and effective AI/LLM integrations. I am constantly expanding my toolset, currently mastering Python and n8n to push the boundaries of automated, intelligent workflows.
+                </p>
+                <p>
+                    Outside of architecting cloud and AI solutions, you can find me enjoying a balanced life: fishing, playing board games with friends, PC gaming, running, or simply spending quality time with my wife and our dog.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to elevate your technical operations?</h2>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto">I'm actively open to remote global opportunities where I can apply my 15+ years of expertise and modern AI capabilities. Let's connect.</p>
+            
+            <a href="mailto:victorf2004@yahoo.com.br" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg mb-16">
+                <i data-lucide="mail" class="w-5 h-5"></i> Let's Connect
+            </a>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-slate-400 text-sm">
+                    © 2026 Victor Morgan Fragoso. All rights reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/victor-morgan-fragoso" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
