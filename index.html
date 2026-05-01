@@ -184,16 +184,123 @@
         </div>
     </section>
 
-    <!-- Case Studies (Placeholder) -->
-    <section id="case-studies" class="py-24 bg-slate-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Case Studies</h2>
-            <p class="text-lg text-slate-600 mb-12">Applying my knowledge to real-world scenarios and learning projects.</p>
-            <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl p-12 shadow-sm border-dashed">
-                <i data-lucide="code-2" class="w-12 h-12 text-slate-400 mx-auto mb-4"></i>
-                <h3 class="text-xl font-medium text-slate-600">Case studies in development</h3>
-                <p class="text-slate-500 mt-2">Showcasing my current in progress projects.</p>
+    <!-- Case Studies -->
+ <section id="case-studies" class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Case Studies</h2>
+                <p class="text-lg text-slate-600">Applying my knowledge to real-world scenarios and learning projects.</p>
             </div>
+
+            <!-- Cards container — add new <article> cards below as projects grow -->
+            <div class="flex flex-col gap-8 max-w-5xl mx-auto">
+
+                <!-- Card: Papelaria Amores — IG Insights -->
+                <article class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+
+                    <!-- Split layout: video left / info right on desktop -->
+                    <div class="flex flex-col lg:flex-row">
+
+                        <!-- Video / WIP Placeholder -->
+                        <div class="lg:w-[55%] p-6">
+                            <div class="aspect-video w-full bg-slate-900 rounded-xl flex flex-col items-center justify-center gap-4">
+                                <div class="text-6xl">👷</div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-amber-400 text-amber-900 rounded-full text-sm font-bold">
+                                    <span class="relative flex h-2 w-2">
+                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-700 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-900"></span>
+                                    </span>
+                                    Work in Progress
+                                </div>
+                                <p class="text-slate-400 text-sm">A demo video is coming soon!</p>
+                            </div>
+                        </div>
+
+                        <!-- Info: category, title, description, tech badges -->
+                        <div class="lg:w-[45%] p-6 flex flex-col justify-center">
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold mb-4 w-fit">
+                                <i data-lucide="bar-chart-2" class="w-3.5 h-3.5"></i>
+                                Analytics Automation
+                            </div>
+
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Papelaria Amores — IG Insights</h3>
+
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Automation pipeline that collects engagement metrics from a client's Instagram Reels, processes the data, and delivers a self-serve dashboard the client uses to drive content decisions independently. The client went from manually checking each Reel to having a centralized, auto-refreshing view that surfaces patterns invisible in isolation.
+                            </p>
+
+                            <!-- Tech badges -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-50 text-orange-700 text-xs font-semibold">
+                                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> n8n
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="code" class="w-3.5 h-3.5"></i> JavaScript
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold">
+                                    <i data-lucide="camera" class="w-3.5 h-3.5"></i> Instagram Graph API
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 text-green-700 text-xs font-semibold">
+                                    <i data-lucide="table" class="w-3.5 h-3.5"></i> Google Sheets
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold">
+                                    <i data-lucide="line-chart" class="w-3.5 h-3.5"></i> Looker Studio
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-violet-50 text-violet-700 text-xs font-semibold">
+                                    <i data-lucide="brain-circuit" class="w-3.5 h-3.5"></i> Claude AI
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expander: full-width below the split -->
+                    <details class="group border-t border-slate-100">
+                        <summary class="flex items-center justify-between cursor-pointer px-6 py-4 hover:bg-slate-50 transition-colors select-none list-none">
+                            <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                                <i data-lucide="wrench" class="w-4 h-4 text-blue-500"></i>
+                                Behind the scenes — how it was built
+                            </div>
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform duration-200 group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-6 pb-6 pt-4 text-slate-600 text-sm leading-relaxed space-y-5 border-t border-slate-100 bg-slate-50/50">
+                            
+                            <div>
+                                <strong class="text-slate-900 block mb-1">The Challenge</strong>
+<p>"Papelaria Amores" is a creative stationery brand that relies heavily on Instagram to showcase its products and connect with its audience. The company needed clear visibility into their content performance to drive strategic marketing decisions. The client, a non-technical business partner, required an automated way to track deep engagement metrics and receive actionable insights without the friction of manual data extraction or navigating complex software.</p>                            </div>
+                            
+                            <div>
+                                <strong class="text-slate-900 block mb-1">The Architecture & Stack</strong>
+                                <p class="mb-2">I designed an end-to-end data pipeline focused on automated ingestion, custom transformation, and AI-driven intelligence. The architecture ensures zero maintenance and a seamless handoff:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li><strong>n8n:</strong> Orchestration and ingestion.</li>
+                                    <li><strong>JavaScript:</strong> Custom data transformation and metric calculation logic embedded directly within the pipeline.</li>
+                                    <li><strong>Instagram Graph API:</strong> Data source (Instagram Business Login auth, no Facebook Page required).</li>
+                                    <li><strong>Google Sheets:</strong> Used for technical scope demonstration and metric collection for future reference, rather than serving as the primary data storage layer.</li>
+                                    <li><strong>Google Looker Studio:</strong> Decision-making dashboard with real-time updates, interactive filters, and shareable delivery for non-technical stakeholders.</li>
+                                    <li><strong>Claude:</strong> Architectural decisions, debugging, and mockup generation for stakeholder validation.</li>
+                                    <li><strong>Claude Opus 4.7 AI Agent:</strong> Automated insight generation and content recommendations derived from the collected metrics.</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <strong class="text-slate-900 block mb-1">How It Works</strong>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li><strong>Data Ingestion & Transformation:</strong> The n8n workflow pulls raw data directly from the Graph API. Embedded JavaScript nodes immediately process this data, calculating crucial decision-making metrics such as Average Engagement Rate, retention time for Reels, and save-to-view ratios.</li>
+                                    <li><strong>AI-Powered Analysis:</strong> Once the metrics are treated and calculated, the results are verified by an integrated AI agent powered by Claude Opus 4.7. This agent periodically reviews the data and generates automatic recommendations—completely replacing the manual analysis previously required to produce business insights.</li>
+                                    <li><strong>Visualization:</strong> The processed data flows into a Looker Studio dashboard, making the metrics instantly accessible and visual.</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <strong class="text-slate-900 block mb-1">Business Impact</strong>
+                                <p>By shifting the focus to concrete engagement metrics—like tracking <em>saves</em> to measure intent-to-purchase, or <em>shares</em> to gauge viral reach—the stakeholder can instantly identify what content formats actually work. Coupled with the Claude Opus 4.7 agent providing automated strategic recommendations, the client can make fast, data-driven decisions on their content strategy with zero technical friction.</p>
+                            </div>
+
+                        </div>
+                    </details>
+                </article>
+
+            </div><!-- /cards container -->
         </div>
     </section>
 
